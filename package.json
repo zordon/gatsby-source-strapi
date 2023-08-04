@@ -1,18 +1,10 @@
 {
-  "name": "gatsby-source-strapi",
+  "name": "@telecomelite/gatsby-source-strapi",
   "version": "1.0.2",
   "description": "Gatsby source plugin for building websites using Strapi as a data source",
-  "author": {
-    "email": "hi@strapi.io",
-    "name": "Strapi Solutions",
-    "url": "http://strapi.io"
-  },
+  "author": "Strapi Solutions <hi@strapi.io> (http://strapi.io)",
   "maintainers": [
-    {
-      "name": "Strapi Solutions",
-      "email": "hi@strapi.io",
-      "url": "http://strapi.io"
-    }
+    "Strapi Solutions <hi@strapi.io> (http://strapi.io)"
   ],
   "directories": {
     "lib": "./lib"
@@ -72,5 +64,6 @@
       "eslint --cache --fix",
       "prettier --write"
     ]
-  }
+  },
+  "main": "index.js"
 }
