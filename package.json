@@ -1,5 +1,5 @@
 {
-  "name": "@telecomelite/gatsby-source-strapi",
+  "name": "@zordon/gatsby-source-strapi",
   "version": "1.0.2",
   "description": "Gatsby source plugin for building websites using Strapi as a data source",
   "author": "Strapi Solutions <hi@strapi.io> (http://strapi.io)",
@@ -7,7 +7,7 @@
     "Strapi Solutions <hi@strapi.io> (http://strapi.io)"
   ],
   "directories": {
-    "lib": "./lib"
+    "lib": "lib"
   },
   "files": [
     "lib/*",
