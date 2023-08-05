@@ -102,7 +102,7 @@ exports.sourceNodes = async (
           return fetchEntity(config, ctx);
         }
 
-        return fetchEntities(config, ctx);
+        return fetchEntities(config, pluginOptions.skipFileDownloads, ctx);
       })
     );
   }

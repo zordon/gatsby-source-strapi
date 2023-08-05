@@ -87,7 +87,9 @@ exports.sourceNodes = async (
   const types = [...collectionTypes, ...singleTypes];
 
   // Execute the promises
-  const entities = await Promise.all(types.map((type) => fetchEntities(type, ctx)));
+  const entities = await Promise.all(
+    types.map((type) => fetchEntities(type, options.skipFileDownloads, ctx))
+  );
 
   // new created nodes
   const newNodes = [];
