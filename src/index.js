@@ -21,9 +21,9 @@ const toTypeInfo = (type, { single = false }) => {
 const contentTypeToTypeInfo = toTypeInfo;
 const singleTypeToTypeInfo = (singleType) => toTypeInfo(singleType, { single: true });
 
-const fetchEntities = async (entityDefinition, ctx) => {
+const fetchEntities = async (entityDefinition, skipFileDownloads, ctx) => {
   const entities = await fetchData(entityDefinition, ctx);
-  if (!options.skipFileDownloads) {
+  if (skipFileDownloads) {
     await normalize.downloadMediaFiles(entities, ctx);
   }
   return entities;
